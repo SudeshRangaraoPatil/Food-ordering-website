@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+          <h1>Register</h1>
+          <form method="POST" action="/register" id="register">
+              <div class="txt_field">
+                  <input type="text" name="username" id="username"  required>
+                  <span></span>
+                  <label>User Name</label>
+              </div>
+              <div class="txt_field">
+                  <input type="email" name="email" id="email" required>
+                  <span></span>
+                  <label>Email</label>
+              </div>
+              <div class="txt_field">
+                  <input type="password" name="password" id="password" required>
+                  <span></span>
+                  <label>Password</label>
+              </div>
+              {{!-- <div class="txt_field">
+                  <input type="password" name="confirmpassword" id="confirmpassword" required>
+                  <span></span>
+                  <label>confirm Password</label>
+              </div> --}}
+              <input name="submit" type="submit" value="Sign Up">
+              <div class="signup_link">
+                  Have an Account ? <a href="/login">Login Here</a>
+              </div>
+          </form>
+      </div>
+  </div>
+  <script>
+			// Event listener for the form submission
+			document.getElementById("register").addEventListener("submit", function(event) {
+				event.preventDefault();
+	           
+				// Get the input values
+				var username = document.getElementById("username").value;
+				var password = document.getElementById("password").value;
+                let email =document.getElementById("email").value;
+	
+				// Check if the user already exists in local storage
+				//var users = JSON.parse(localStorage.getItem("users")) || [];
+	             console.log({username,password,email})
+				// Check if the username already exists
+				/*var existingUser = users.find(function(user) {
+					return user.username === username;
+				});
+	
+				if (existingUser) {
+					alert("Username already exists. Please choose a different one.");
+				} else {
+					// Add the new user to the list of users
+					users.push({ username: username, password: password });
+					localStorage.setItem("users", JSON.stringify(users));
+					alert("Account created successfully. You can now sign in.");
+					document.getElementById("signinForm").reset();
+				}*
+			});
+		</script>
+  </body>
+</html>

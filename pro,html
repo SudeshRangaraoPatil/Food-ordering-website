@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Food Order</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <div class="navbar">
+          <h1 class="logoWebsite">Lorem Ipsum</h1>
+          <div class="openMenu"><i class="fas fa-bars fa-2x"></i></div>
+
+          <h1 class="logoMobile">Lorem</h1>
+
+          <nav class="mainMenu">
+            <ul>
+              <li><a class="strike" href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Cusine</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contack</a></li>
+              <li><a href="#">Book</a></li>
+              <button class="btn">Cart</button>
+            </ul>
+            <div class="closeMenu"><i class="fas fa-times fa-2x"></i></div>
+          </nav>
+
+          <div class="cart"><i class="fas fa-shopping-cart fa-2x"></i></div>
+        </div>
+        <div class="body">
+          <div class="flex">
+            <h1>What are you <br />having for Lunch?</h1>
+            <p class="desktop">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              qui, <span class="underline">tempore</span> dignissimos.
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="flex">
+              <div class="card">
+                <img src="https://media.istockphoto.com/photos/small-4inch-soft-beef-tacos-picture-id1146906219?k=6&m=1146906219&s=612x612&w=0&h=UNtK9oaNeIuVELKX_tcYemHvHDO82Um8hUKqqAaiMXY=" alt="tacos" />
+                <h5>Mexican Tacos</h5>
+              </div>
+              <div class="card">
+                <img src="https://media.istockphoto.com/photos/cheesy-pepperoni-pizza-picture-id938742222?k=6&m=938742222&s=612x612&w=0&h=on_9ZYG1SG4Xgk7BLZSlaXJl8VYb6ZePDHTN6zukDHM=" alt="pizza" />
+                <h5>Farmhouse Pizza</h5>
+              </div>
+              <div class="card">
+                <img src="https://www.recipetineats.com/wp-content/uploads/2019/08/Avocado-Chicken-Burgers_9.jpg" alt="burger" />
+                <h5>Chicken Burger</h5>
+              </div>
+              <div class="card">
+                <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Blue-Ribbon-Beef-Nachos_EXPS_THJJ21_12416_B02_10_9b.jpg" alt="nachos" />
+                <h5>Loaded Nachos</h5>
+              </div>
+              <div class="card">
+                <img src="https://www.pcrm.org/sites/default/files/gingery-noodles-2.JPG" alt="noodles" />
+                <h5>Haka Noodles</h5>
+              </div>
+            </div>
+          </div>
+          <div class="mobile">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              qui, <span class="underline">tempore</span> dignissimos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script src="index.js"></script>
+  </body>
+</html>
